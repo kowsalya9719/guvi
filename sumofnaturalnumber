@@ -1,0 +1,8 @@
+def sumofnaturalnumbers(num):
+    if(num==0):
+        return num
+    else:
+        return(num +sumofnaturalnumbers(num-1))
+number=int(input("please enter any number:"))
+totalvalue=sumofnaturalnumbers(number)
+print("sum of natural numbers from 1 to {0}={1}".format(number,totalvalue))
