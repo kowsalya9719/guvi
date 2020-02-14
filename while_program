@@ -1,0 +1,10 @@
+#while statement program
+
+k=1
+while(k==1):
+    n=input("enter the value:")
+    if(n=='q'):
+        break
+
+        
+            
