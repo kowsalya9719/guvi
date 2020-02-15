@@ -1,0 +1,11 @@
+#You are given A = Length of a rectangle & B = breadth of a rectangle. Find its area “C”.
+
+def Area():
+    #getting input from user 
+    A=int(input())
+    B=int(input())
+    C=(A*B)
+    return C
+res=Area()
+print(res)
+    
