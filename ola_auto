@@ -1,0 +1,41 @@
+S=float(input("Enter the source:"))
+D=float(input("Enter the destination:"))
+Km=D-S
+print("Km's that you travelled :",Km)
+print("1.Auto  - Rs.10/km")
+print("2.Mini  - Rs.20/km")
+print("3.Micro - Rs.30/km")
+print("4.Prime - Rs.40/km")
+ch=int(input("Enter the choice:"))
+def auto():
+    travelledprice=Km*10
+    return (travelledprice)
+def Mini():
+    travelledprice=Km*20
+    return (travelledprice)
+def Micro():
+    travelledprice=Km*30
+    return (travelledprice)
+def prime():
+    travelledprice=Km*40
+    return (travelledprice)
+if(ch==1):
+    ra = auto()
+    print("Total cost for {0} is :{1}".format(ch,ra))
+elif(ch==2):
+   ra = Mini()
+   print("Total cost for {0} is :{1}".format(ch,ra))
+elif(ch==3):
+   ra = Micro()
+   print("Total cost for {0} is :{1}".format(ch,ra))
+elif(ch==4):
+    ra = prime()
+    print("Total cost for {0} is :{1}".format(ch,ra))
+else:
+    print("Invalid")
+    
+  
+
+
+
+             
