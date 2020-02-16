@@ -1,0 +1,10 @@
+#You are provided with the radius of a circle "A". Find the length of its circumference.
+
+import math
+def radius():
+    Radius=int(input())
+    circumference=(math.pi*2*Radius)
+    circumference=round(circumference,2)
+    return circumference
+res=radius()
+print(res)
