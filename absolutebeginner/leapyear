@@ -1,0 +1,12 @@
+#Let "A" be a year, write a program to check whether this year is a leap year or not.
+
+A=int(input())
+if(A%4==0 and A%100!=0 ):
+    print("Y")
+elif(A%100==0):
+    print("N")
+elif(A%400==0):
+    print("Y")
+else:
+    print("N")
+
