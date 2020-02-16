@@ -1,0 +1,5 @@
+#Find the minimum among 10 numbers
+
+st1=[10,20,4,45,99]
+st1.sort()
+print(min(st1))
