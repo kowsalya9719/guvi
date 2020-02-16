@@ -1,0 +1,6 @@
+#Given a number N followed by N numbers.Find the smallest number and largest number
+
+l=int(input())
+A=[]
+print(min(A),end=" ")
+print(max(A))
