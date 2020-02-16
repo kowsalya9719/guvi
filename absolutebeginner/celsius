@@ -1,0 +1,10 @@
+#You are given with a number A i.e. the temperature in Celcius. Write a program to convert this into Fahrenheit
+
+def fahrenheit():
+    C=int(input())
+    f=(C*1.8)+32
+    f=round(f,2)
+    return f
+res=fahrenheit()
+print(res)
+
