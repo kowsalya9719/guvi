@@ -1,0 +1,9 @@
+#You are provided with a number check whether its odd or even.
+
+n=int(input())
+if(n==0):
+    print(0)
+elif(n%2==0):
+    print("Even")
+else:
+    print("odd")
