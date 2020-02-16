@@ -1,0 +1,8 @@
+#Given 3 numbers N , L and R. Print 'yes' if N is between L and R else print 'no'.
+N=int(input())
+L=int(input())
+R=int(input())
+if(L<N and N<R):
+    print("yes")
+else:
+    print("no")
