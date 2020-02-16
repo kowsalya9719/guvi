@@ -1,0 +1,11 @@
+#You are given with Principle amount($), Interest Rate(%) and Time (years) in that order. Find Simple Interest
+import math
+def interest():
+    P=int(input())
+    R=int(input())
+    T=int(input())
+    Simple=((P*T*R)/100)
+    Simple=round(Simple,2)
+    return Simple
+res=interest()
+print(res)
