@@ -1,0 +1,8 @@
+#You are given with a number "N", find its cube.
+
+def cube():
+	n=int(input())
+	c=n**3
+	return c
+res=cube()
+print(res)
