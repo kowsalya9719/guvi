@@ -1,0 +1,7 @@
+#The side of an equilateral triangle is provided as the input.
+
+import math
+a=int(input())
+area=(math.sqrt(3)/4)*(a**2)
+area=round(area,2)
+print(area)
