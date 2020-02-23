@@ -1,0 +1,8 @@
+#Count the number of digits of a given number N.Size of the integer ranges from
+number = int(input())
+count = 0
+while(number > 0):
+	number = number//10
+	count= count+1
+print(count)
+
