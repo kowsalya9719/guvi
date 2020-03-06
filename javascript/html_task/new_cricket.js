@@ -1,3 +1,4 @@
+class cricketgame{
 let s=[],w=[],b=[],o=[],score1=0,score2=0,p=[1,1];
 w=[0,0];b=[36,36];o=[0,0];p=[1,1];
 function play1(){
@@ -38,5 +39,9 @@ function play2(){
     b[1]=parseInt(bl1)-1;
     document.getElementById("b2").value=b[1];
     if(o[1]==6 || r==0){o[1]=0;p[1]+=1;}
-    
+     
 }
+const obj=new cricketgame();
+obj.play1()
+obj.play2()
+
