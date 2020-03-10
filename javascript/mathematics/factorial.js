@@ -10,7 +10,7 @@ var N=data;
 var fact=1;
 for(i=1;i<=N;i++)
 {
-  fact=fact*1;
+  fact=fact*i;
 }
  console.log(fact);
 });
