@@ -7,6 +7,6 @@ const inp = readline.createInterface({
 
 inp.on("line", (data) => {
     var N=parseInt(data);
-	console.log(Math.sin(N* Math.PI / 180)); 
+	console.log(Math.sin(N* Math.PI / 180).toFixed(1)); 
 
 });
