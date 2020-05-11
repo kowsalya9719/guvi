@@ -1,54 +1,40 @@
 //Given an array of N elements, sort the elements of the array based on frequency. If two numbers have the same frequency,then the smaller number comes first (eg) if the elements are 1,1,3,1,2,3,4 then the output is 2,4,3,3,1,1,1
 const readline=require('readline');
-const inp=readline.createInterface({
+const imp=readline.createInterface({
     input:process.stdin
-})
-const user=[];
-inp.on('line',(data)=>{
-    user.push(data);
 });
-var n;
-var l=[];
-var da=[];
-var r=[];
-inp.on('close',()=>{
-    n=parseInt(user[0]);
-    l=user[1].split(" ");
-    for(var i=0;i<l.length;i++)
-    {  var c=0;
-        var m=l[i];
-        for(var j=0;j<l.length;j++)
-        {
-            if(parseInt(m)==parseInt(l[j]))
-            {
-                c++;
-            }
-        }
-        r.push(c);
-        da.push(m);
-        m='';
+var n=[];
+imp.on("line",(data)=>{
+    n.push(data);
+});
+
+imp.on("close",()=>{
+    var a=parseInt(n[0]);
+    var r=n[1].split(" ");
+  function Frequency(r) {
+    var f = {};
+    var sort = [];
+    var w = [];
+
+    r.forEach(function(v) {
+        if ( v in f )
+            f[v] = f[v] + 1;
+        else
+            f[v] = 1;
+    });
+   for(var k in f){
+        sort.push([k, f[k]]);
     }
-    console.log(r);
-    console.log(da);
-    var res=[];
-    res=r.sort();
-    console.log(res);
-    var h=0;
-    var k=[];
-    for(var i=(r.length)-1;i>=0;i--)
-    {  
-        for(var j=0;j<res.length;j++)
-         {
-            if(parseInt(r[i])==parseInt(res[j]))
-            {
-                k.push(da[i]);
-                //console.log(da[i]);
-                break;
+    sort.sort(function(a, b){
+        return a[1] - b[1];
+    });
+sort.forEach(function(o){
+        for(var i=0; i < o[1]; i++){
+            w.push(o[0]);
         }
-         }
-    }
-   
-    console.log(k.join(" "));
-   
-   
+    });
+    return w;
+   }
+var b=Frequency(r);
+console.log(b.join(" "));
 });
