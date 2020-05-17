@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+
+<body id="body">
+<script>
+var b=document.getElementById("body");
+b.style.backgroundColor="#ffff66";
+var table=document.createElement("TABLE");
+table.setAttribute("width","100%");
+table.setAttribute("border","1px","solid");
+table.setAttribute("style","border-collapse:collapse");
+
+
+var cap=document.createElement("caption");
+var h3=document.createElement("h4");
+h3.innerHTML="Request For New PAN Card Or/And Changes Or Connection in PAN Data";
+var p=document.createElement("p");
+p.innerHTML="Fields marked with *(asterisk) are mandatory. To avoid mistakes(s). please refer guidelines and instructions";
+cap.appendChild(h3);
+cap.appendChild(p);
+table.appendChild(cap);
+cap.setAttribute("style","background-color:#cc0000");
+
+var row1=table.insertRow(0);
+var cell=row1.insertCell(0);
+var cell1=row1.insertCell(1);
+cell.setAttribute("width","5%");
+//1
+var text=document.createElement("p");
+var lab1=document.createElement("label");
+lab1.innerHTML="yes";
+lab1.style.paddingLeft="55px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="no";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text.innerHTML="Wheather cittizen of India";
+cell1.appendChild(text);
+text.appendChild(lab1);
+text.appendChild(i1);
+text.appendChild(lab2);
+text.appendChild(i2);
+
+//2
+var row2=table.insertRow(1);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("li");
+var lab3=document.createElement("label");
+lab3.innerHTML="Permanent Account Number(PAN)";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//3
+var row3=table.insertRow(2);
+var c31=row3.insertCell(0);
+var c32=row3.insertCell(1);
+c31.setAttribute("width","5%");
+c31.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c31.appendChild(i4);
+var l2=document.createElement("li");
+var lab4=document.createElement("label");
+lab4.innerHTML="* 1.Name";
+l2.appendChild(lab4);
+c32.appendChild(l2);
+//4
+var row4=table.insertRow(3);
+var c41=row4.insertCell(0);
+var c42=row4.insertCell(1);
+c41.setAttribute("width","5%");
+c41.setAttribute("height","30px");
+
+var text2=document.createElement("p");
+var lab5=document.createElement("label");
+lab5.innerHTML="Shri/Mr";
+lab5.style.paddingLeft="35px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+var lab6=document.createElement("label");
+lab6.innerHTML="Smt./Mrs";
+lab6.style.paddingLeft="45px";
+var i4=document.createElement("input");
+i4.setAttribute("type","radio");
+var lab7=document.createElement("label");
+lab7.innerHTML="Kumar/Ms";
+lab7.style.paddingLeft="55px";
+var i5=document.createElement("input");
+i5.setAttribute("type","radio");
+var lab8=document.createElement("label");
+lab8.innerHTML="M/s";
+
+
+text2.innerHTML="Title";
+c42.appendChild(text2);
+text2.appendChild(lab5);
+text2.appendChild(i3);
+text2.appendChild(lab6);
+text2.appendChild(i4);
+text2.appendChild(lab7);
+text2.appendChild(i5);
+text2.appendChild(lab8);
+
+//5
+var row5=table.insertRow(4);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="Last Name/Surname";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c52.appendChild(text3);
+
+
+var lab10=document.createElement("label");
+lab10.innerHTML="First Name";
+var i7=document.createElement("input");
+i7.setAttribute("type","text");
+text3.appendChild(lab10);
+text3.appendChild(i7);
+c52.appendChild(text3);
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="Middle Name";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c52.appendChild(text3);
+
+//6
+var row6=table.insertRow(5);
+var c61=row6.insertCell(0);
+var c62=row6.insertCell(1);
+c61.setAttribute("width","5%");
+c61.setAttribute("height","30px");
+var text4=document.createElement("p");
+var lab12=document.createElement("label");
+lab12.innerHTML="* Name as you would like it printed on the card(Prefix like Shri,Smt,Kumari,Late,DR,CA,Ms,Mr,Mrs,M/s,Alias etc.are not allowed)";
+text4.appendChild(lab12);
+c62.appendChild(text4);
+//7
+var row7=table.insertRow(6);
+var c71=row7.insertCell(0);
+var c72=row7.insertCell(1);
+c71.setAttribute("width","5%");
+c71.setAttribute("height","30px");
+var i9=document.createElement("input");
+i9.setAttribute("type","text");
+c72.appendChild(i9);
+i9.setAttribute("style","width:300px;");
+
+//8
+var row8=table.insertRow(7);
+var c81=row8.insertCell(0);
+var c82=row8.insertCell(1);
+c81.setAttribute("width","5%");
+c81.setAttribute("height","30px");
+var text5=document.createElement("p");
+var lab13=document.createElement("label");
+lab13.innerHTML="Detail of parents.(Prefix like Shri,Smt,Kumari,Late,DR,CA,Ms,Mr,Mrs,M/s,Alias etc.are not allowed.)";
+text5.appendChild(lab13);
+c82.appendChild(text5);
+
+//9
+var row9=table.insertRow(8);
+var c91=row9.insertCell(0);
+var c92=row9.insertCell(1);
+c91.setAttribute("width","5%");
+c91.setAttribute("height","30px");
+var text6=document.createElement("p");
+var lab14=document.createElement("label");
+lab14.innerHTML="yes";
+lab1.style.paddingLeft="55px";
+var i10=document.createElement("input");
+i10.setAttribute("type","radio");
+var lab15=document.createElement("label");
+lab15.innerHTML="no";
+var i11=document.createElement("input");
+i11.setAttribute("type","radio");
+text6.innerHTML="Whether mother is single parent and you wish to apply for PAN by furnishing the name of your  mother only.";
+c92.appendChild(text6);
+text6.appendChild(lab14);
+text6.appendChild(i10);
+text6.appendChild(lab15);
+text6.appendChild(i11);
+
+//10
+var row10=table.insertRow(9);
+var c101=row10.insertCell(0);
+var c102=row10.insertCell(1);
+c101.setAttribute("width","5%");
+c101.setAttribute("height","30px");
+var i12=document.createElement("input");
+i12.setAttribute("type","checkbox");
+c101.appendChild(i12);
+var text7=document.createElement("p");
+var lab16=document.createElement("label");
+lab16.innerHTML="*Father's Name(Mandatory field.Even married woman should give father's name only.)";
+text7.appendChild(lab16);
+c102.appendChild(text7);
+//11
+var row11=table.insertRow(10);
+var c111=row11.insertCell(0);
+var c112=row11.insertCell(1);
+c111.setAttribute("width","5%");
+c111.setAttribute("height","30px");
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="Last Name/Surname";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c112.appendChild(text3);
+
+
+var lab10=document.createElement("label");
+lab10.innerHTML="First Name";
+var i7=document.createElement("input");
+i7.setAttribute("type","text");
+text3.appendChild(lab10);
+text3.appendChild(i7);
+c112.appendChild(text3);
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="Middle Name";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c112.appendChild(text3);
+//12
+var row12=table.insertRow(11);
+var c121=row12.insertCell(0);
+var c122=row12.insertCell(1);
+c121.setAttribute("width","5%");
+c121.setAttribute("height","30px");
+
+var i12=document.createElement("input");
+i12.setAttribute("type","checkbox");
+c121.appendChild(i12);
+var text7=document.createElement("p");
+var lab16=document.createElement("label");
+lab16.innerHTML="Mother's Name(This fiels is optional.)";
+text7.appendChild(lab16);
+c122.appendChild(text7);
+
+
+//13
+var row13=table.insertRow(12);
+var c131=row13.insertCell(0);
+var c132=row13.insertCell(1);
+c131.setAttribute("width","5%");
+c131.setAttribute("height","30px");
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="Last Name/Surname";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c132.appendChild(text3);
+
+
+var lab10=document.createElement("label");
+lab10.innerHTML="First Name";
+var i7=document.createElement("input");
+i7.setAttribute("type","text");
+text3.appendChild(lab10);
+text3.appendChild(i7);
+c132.appendChild(text3);
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="Middle Name";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c132.appendChild(text3);
+//14
+var row14=table.insertRow(13);
+var c141=row14.insertCell(0);
+var c142=row14.insertCell(1);
+c141.setAttribute("width","5%");
+c141.setAttribute("height","30px");
+
+var text8=document.createElement("p");
+var lab17=document.createElement("label");
+lab17.innerHTML="Father Name";
+lab17.style.paddingLeft="55px";
+var i13=document.createElement("input");
+i13.setAttribute("type","radio");
+var lab18=document.createElement("label");
+lab18.innerHTML="Mother Name";
+var i14=document.createElement("input");
+i14.setAttribute("type","radio");
+text8.innerHTML="4.Select parent name which is to be printed on the card(In case no option is provided than PAN card will be issued with father's name)";
+c142.appendChild(text8);
+text8.appendChild(lab17);
+text8.appendChild(i13);
+text8.appendChild(lab18);
+text8.appendChild(i14);
+//15
+var row15=table.insertRow(14);
+var c151=row15.insertCell(0);
+var c152=row15.insertCell(1);
+c151.setAttribute("width","5%");
+c151.setAttribute("height","30px");
+
+var i15=document.createElement("input");
+i15.setAttribute("type","checkbox");
+c151.appendChild(i15);
+var text9=document.createElement("p");
+var lab19=document.createElement("label");
+lab19.innerHTML="*5.Date of Birth/incorporation/Agreement/Partnership or Trust Deed/Formation of Body of Individuals/Association of Persons";
+var i16=document.createElement("input");
+i16.setAttribute("type","date");
+text9.appendChild(lab19);
+text9.appendChild(i16);
+c152.appendChild(text9);
+//16
+var row16=table.insertRow(15);
+var c161=row16.insertCell(0);
+var c162=row16.insertCell(1);
+c161.setAttribute("width","5%");
+c161.setAttribute("height","30px");
+
+var text2=document.createElement("p");
+var lab5=document.createElement("label");
+lab5.innerHTML="Male";
+lab5.style.paddingLeft="35px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+var lab6=document.createElement("label");
+lab6.innerHTML="female";
+lab6.style.paddingLeft="45px";
+var i4=document.createElement("input");
+i4.setAttribute("type","radio");
+var lab7=document.createElement("label");
+lab7.innerHTML="Transgender";
+lab7.style.paddingLeft="55px";
+
+
+
+text2.innerHTML="6.*Gender";
+c162.appendChild(text2);
+text2.appendChild(lab5);
+text2.appendChild(i3);
+text2.appendChild(lab6);
+text2.appendChild(i4);
+text2.appendChild(lab7);
+text2.appendChild(i5);
+text2.appendChild(lab8);
+//17
+var row17=table.insertRow(16);
+var c171=row17.insertCell(0);
+var c172=row17.insertCell(1);
+c171.setAttribute("width","5%");
+c171.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c171.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*7.Photo Mismatch";
+l2.appendChild(lab4);
+c172.appendChild(l2);
+
+//18
+var row18=table.insertRow(17);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c181.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*8.Signature Mismatch";
+l2.appendChild(lab4);
+c182.appendChild(l2);
+//19
+var row16=table.insertRow(18);
+var c161=row16.insertCell(0);
+var c162=row16.insertCell(1);
+c161.setAttribute("width","5%");
+c161.setAttribute("height","30px");
+
+var text2=document.createElement("p");
+var lab5=document.createElement("label");
+lab5.innerHTML="Residential";
+lab5.style.paddingLeft="35px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+var lab6=document.createElement("label");
+lab6.innerHTML="office";
+lab6.style.paddingLeft="45px";
+var i4=document.createElement("input");
+i4.setAttribute("type","radio");
+text2.innerHTML="*9.Address for communication";
+c162.appendChild(text2);
+text2.appendChild(lab5);
+text2.appendChild(i3);
+text2.appendChild(lab6);
+text2.appendChild(i4);
+text2.appendChild(lab7);
+text2.appendChild(i5);
+text2.appendChild(lab8);
+//20
+var row2=table.insertRow(19);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("li");
+var lab3=document.createElement("label");
+lab3.innerHTML="Office Name (to be filled only in case of office address)";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//21
+
+var row2=table.insertRow(20);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Flat/Door/Block No.";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//22
+
+var row2=table.insertRow(21);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Name of Premises/Building/village";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//23
+
+var row2=table.insertRow(22);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Road/Street/Lane/Post Office";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//24
+
+var row2=table.insertRow(23);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Area/Locality/Taluka/Sub-Division";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//25
+
+var row2=table.insertRow(24);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Town/City/District";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//26
+var row2=table.insertRow(25);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="State/Union/Territory";
+var i3=document.createElement("Select");
+
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//27
+
+var row2=table.insertRow(26);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="PIN(Indicating PIN is Mandatory)";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+document.body.appendChild(table)
+//28
+var row2=table.insertRow(27);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Country";
+var i3=document.createElement("Select");
+
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//29
+
+var row2=table.insertRow(28);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Zip";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//30
+var row3=table.insertRow(29);
+var c31=row3.insertCell(0);
+var c32=row3.insertCell(1);
+c31.setAttribute("width","5%");
+c31.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c31.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="10.If you desire to update your other address,give required  details & submit proof of other address also.";
+l2.appendChild(lab4);
+c32.appendChild(l2);
+//31
+var row2=table.insertRow(30);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="Email ID";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+document.body.appendChild(table)
+//32
+var row16=table.insertRow(31);
+var c161=row16.insertCell(0);
+var c162=row16.insertCell(1);
+c161.setAttribute("width","5%");
+c161.setAttribute("height","30px");
+
+var text2=document.createElement("p");
+var lab5=document.createElement("label");
+lab5.innerHTML="AADHAR";
+lab5.style.paddingLeft="35px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+var lab6=document.createElement("label");
+lab6.innerHTML="ELD";
+lab6.style.paddingLeft="45px";
+var i4=document.createElement("input");
+i4.setAttribute("type","radio");
+text2.innerHTML="incase of Indian";
+c162.appendChild(text2);
+text2.appendChild(lab5);
+text2.appendChild(i3);
+text2.appendChild(lab6);
+text2.appendChild(i4);
+text2.appendChild(lab7);
+text2.appendChild(i5);
+text2.appendChild(lab8);
+//33
+var row2=table.insertRow(32);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="*12.AADHAR number";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//34
+var row2=table.insertRow(33);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="*Name as per AADHAAR letter or as per the enrollment id of Aadhaar application form";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+//35
+var row2=table.insertRow(34);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="*13.GSTN";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//36
+var row3=table.insertRow(35);
+var c31=row3.insertCell(0);
+var c32=row3.insertCell(1);
+c31.setAttribute("width","5%");
+c31.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c31.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*14. Mention other Permanent  Account Numbers (PANs) if any.inadvertently alloted to you.submit proof of surrendered PAN(s)balong with the application";
+l2.appendChild(lab4);
+c32.appendChild(l2);
+//37
+var row5=table.insertRow(36);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="PAN1";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c52.appendChild(text3);
+
+
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="PAN2";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c52.appendChild(text3);
+//38
+var row5=table.insertRow(37);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="PAN3";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c52.appendChild(text3);
+
+
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="PAN4";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c52.appendChild(text3);
+
+//39
+var row5=table.insertRow(38);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="15.verification";
+text3.appendChild(lab9);
+c52.appendChild(text3);
+
+//40
+var row5=table.insertRow(39);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="l/We have enclosed ";
+var se=document.createElement("Select");
+/*var op=document.createElement("option")
+var op.innerHTML="--please select--";
+op.setAttribute("selected","selected")
+se.appendChild(op);*/
+text3.appendChild(se);
+text3.appendChild(lab9);
+c52.appendChild(text3);
+//41
+var row1=table.insertRow(40);
+var cell=row1.insertCell(0);
+var cell1=row1.insertCell(1);
+cell.setAttribute("width","5%");
+
+var text=document.createElement("p");
+var lab1=document.createElement("label");
+lab1.innerHTML="physical PAN card & e-PAN card";
+lab1.style.paddingLeft="55px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Only e-PAN Card  Fees application";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text.innerHTML="Wheather you wish to have";
+cell1.appendChild(text);
+text.appendChild(lab1);
+text.appendChild(i1);
+text.appendChild(lab2);
+text.appendChild(i2);
+//42
+
+var row18=table.insertRow(41);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c181.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*Other Details";
+l2.appendChild(lab4);
+c182.appendChild(l2);
+
+//43
+
+var row18=table.insertRow(42);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c181.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*1.Depository Account Details";
+l2.appendChild(lab4);
+c182.appendChild(l2);
+//44
+var row5=table.insertRow(43);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+var text3=document.createElement("p");
+var lab9=document.createElement("label");
+lab9.innerHTML="DP ID:";
+var i6=document.createElement("input");
+i6.setAttribute("type","text");
+text3.appendChild(lab9);
+text3.appendChild(i6);
+c52.appendChild(text3);
+
+
+
+
+
+var lab11=document.createElement("label");
+lab11.innerHTML="Client ID:";
+var i8=document.createElement("input");
+i8.setAttribute("type","text");
+text3.appendChild(lab11);
+text3.appendChild(i8);
+c52.appendChild(text3);
+//45
+
+var row18=table.insertRow(44);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c181.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*2.Payment Details";
+l2.appendChild(lab4);
+c182.appendChild(l2);
+//46
+
+var row18=table.insertRow(45);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+var i4=document.createElement("input");
+i4.setAttribute("type","checkbox");
+c181.appendChild(i4);
+var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="*online payment";
+l2.appendChild(lab4);
+c182.appendChild(l2);
+document.body.appendChild(table)
+
+//47
+var rowss=table.insertRow(46);
+var css=rowss.insertCell(0);
+var css2=rowss.insertCell(1);
+css.setAttribute("width","5%");
+css.setAttribute("height","30px");
+var para=document.createElement("p");
+para.innerHTML="For Paperless PAN Application :"
+var input=document.createElement("input");
+ input.setAttribute("type","radio");
+ var la=document.createElement("label");
+la.innerHTML="yes";
+var input1=document.createElement("input");
+ input1.setAttribute("type","radio");
+ var la1=document.createElement("label");
+la1.innerHTML="No";
+para.appendChild(input);
+para.appendChild(la);
+para.appendChild(input1);
+
+para.appendChild(la1);
+css2.appendChild(para);
+
+
+
+
+</script>
+
+</body>
+</html>
