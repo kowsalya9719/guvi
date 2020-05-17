@@ -929,9 +929,58 @@ para.appendChild(input1);
 para.appendChild(la1);
 css2.appendChild(para);
 
+/*var para=document.createElement("p");
+var drop=document.createElement("input");
+drop.setAttribute("type","radio");
+labell=document.createElement("label");
+labell.innerHTML="DSC";
+dro=document.createElement("select");
+labelll=document.createElement("label");
+labelll.innerHTML="Guidelines for DSC user";
+para.appendChild(drop);
+para.appendChild(labell);
+para.appendChild("dro");
+para.appendChild(labelll);
+css2.appendChild(para1);*/
+//48
+var row2=table.insertRow(47);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="ALREADY UPLOADED PHOTO:";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//49
+
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="ALREADY UPLOADED SIGNATURE:";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+//50
 
 
-
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="ALREADY UPLOADED DOCUMENTS:";
+var i3=document.createElement("input");
+i3.setAttribute("type","textarea");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+var i3=document.createElement("input");
+i3.setAttribute("type","submit");
+c22.appendChild(i3);
 </script>
 
 </body>
