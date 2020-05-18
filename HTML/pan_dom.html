@@ -36,7 +36,7 @@ var lab2=document.createElement("label");
 lab2.innerHTML="no";
 var i2=document.createElement("input");
 i2.setAttribute("type","radio");
-text.innerHTML="Wheather cittizen of India";
+text.innerHTML="*Wheather cittizen of India";
 cell1.appendChild(text);
 text.appendChild(lab1);
 text.appendChild(i1);
@@ -50,9 +50,9 @@ var c22=row2.insertCell(1);
 c21.setAttribute("width","5%");
 c21.setAttribute("height","30px");
 
-var l1=document.createElement("li");
+var l1=document.createElement("p");
 var lab3=document.createElement("label");
-lab3.innerHTML="Permanent Account Number(PAN)";
+lab3.innerHTML="*Permanent Account Number(PAN)";
 var i3=document.createElement("input");
 i3.setAttribute("type","text");
 l1.appendChild(lab3);
@@ -68,7 +68,7 @@ c31.setAttribute("height","30px");
 var i4=document.createElement("input");
 i4.setAttribute("type","checkbox");
 c31.appendChild(i4);
-var l2=document.createElement("li");
+var l2=document.createElement("p");
 var lab4=document.createElement("label");
 lab4.innerHTML="* 1.Name";
 l2.appendChild(lab4);
@@ -316,7 +316,7 @@ var lab18=document.createElement("label");
 lab18.innerHTML="Mother Name";
 var i14=document.createElement("input");
 i14.setAttribute("type","radio");
-text8.innerHTML="4.Select parent name which is to be printed on the card(In case no option is provided than PAN card will be issued with father's name)";
+text8.innerHTML="*4.Select parent name which is to be printed on the card(In case no option is provided than PAN card will be issued with father's name)";
 c142.appendChild(text8);
 text8.appendChild(lab17);
 text8.appendChild(i13);
@@ -356,11 +356,11 @@ i3.setAttribute("type","radio");
 var lab6=document.createElement("label");
 lab6.innerHTML="female";
 lab6.style.paddingLeft="45px";
-var i4=document.createElement("input");
-i4.setAttribute("type","radio");
-var lab7=document.createElement("label");
-lab7.innerHTML="Transgender";
-lab7.style.paddingLeft="55px";
+var i0=document.createElement("input");
+i0.setAttribute("type","radio");
+var lab0=document.createElement("label");
+lab0.innerHTML="Transgender";
+lab0.style.paddingLeft="55px";
 
 
 
@@ -370,8 +370,8 @@ text2.appendChild(lab5);
 text2.appendChild(i3);
 text2.appendChild(lab6);
 text2.appendChild(i4);
-text2.appendChild(lab7);
-text2.appendChild(i5);
+text2.appendChild(lab0);
+text2.appendChild(i0);
 text2.appendChild(lab8);
 //17
 var row17=table.insertRow(16);
@@ -436,7 +436,7 @@ var c22=row2.insertCell(1);
 c21.setAttribute("width","5%");
 c21.setAttribute("height","30px");
 
-var l1=document.createElement("li");
+var l1=document.createElement("p");
 var lab3=document.createElement("label");
 lab3.innerHTML="Office Name (to be filled only in case of office address)";
 var i3=document.createElement("input");
@@ -536,10 +536,13 @@ c21.setAttribute("height","30px");
 var l1=document.createElement("p");
 var lab3=document.createElement("label");
 lab3.innerHTML="State/Union/Territory";
-var i3=document.createElement("Select");
-
+var i35=document.createElement("Select");
+var op=document.createElement("option");
+op.innerHTML="--please select--";
+op.setAttribute("selected","selected");
+i35.appendChild(op);
 l1.appendChild(lab3);
-l1.appendChild(i3);
+l1.appendChild(i35);
 c22.appendChild(l1);
 
 //27
@@ -569,10 +572,13 @@ c21.setAttribute("height","30px");
 var l1=document.createElement("p");
 var lab3=document.createElement("label");
 lab3.innerHTML="Country";
-var i3=document.createElement("Select");
-
+var i35=document.createElement("Select");
+var op=document.createElement("option");
+op.innerHTML="--please select--";
+op.setAttribute("selected","selected");
+i35.appendChild(op);
 l1.appendChild(lab3);
-l1.appendChild(i3);
+l1.appendChild(i35);
 c22.appendChild(l1);
 //29
 
@@ -777,23 +783,25 @@ text3.appendChild(lab9);
 c52.appendChild(text3);
 
 //40
-var row5=table.insertRow(39);
-var c51=row5.insertCell(0);
-var c52=row5.insertCell(1);
-c51.setAttribute("width","5%");
-c51.setAttribute("height","30px");
+var row2=table.insertRow(39);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
 
-var text3=document.createElement("p");
-var lab9=document.createElement("label");
-lab9.innerHTML="l/We have enclosed ";
-var se=document.createElement("Select");
-/*var op=document.createElement("option")
-var op.innerHTML="--please select--";
-op.setAttribute("selected","selected")
-se.appendChild(op);*/
-text3.appendChild(se);
-text3.appendChild(lab9);
-c52.appendChild(text3);
+var l1=document.createElement("p");
+var lab3=document.createElement("label");
+lab3.innerHTML="I/We have enclosed";
+var i35=document.createElement("Select");
+var op=document.createElement("option");
+op.innerHTML="--please select--";
+op.setAttribute("selected","selected");
+
+
+i35.appendChild(op);
+l1.appendChild(lab3);
+l1.appendChild(i35);
+c22.appendChild(l1);
 //41
 var row1=table.insertRow(40);
 var cell=row1.insertCell(0);
