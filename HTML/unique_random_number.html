@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random</title>
+</head>
+<body>
+
+
+<script>
+	
+    var input=document.createElement("input");
+    input.setAttribute("type","submit");
+    input.id="button";
+    input.style.width="15%";
+    input.style.height="35px";
+    document.body.appendChild(input);
+    document.getElementById("button").onclick=random;
+
+    var text=document.createElement("input");
+    text.setAttribute("type","text");
+    text.id="tex";
+    text.style.width="15%";
+    text.style.height="35px";
+    document.body.appendChild(text);
+
+
+function random()
+ {      
+ var r=[];
+
+  for(var i=0;i<5;i++)
+  {
+  	var num = Math.floor((Math.random() * 10));
+  	var count=0;
+  	r.push(num);
+  	if (r.length>=1)
+  	 {
+         for(j=0;j<r.length-1;j++){
+         	if(r[i]==r[j])
+         	{
+         		r.pop();
+         		count=count+1;
+         		break;
+         	}
+         }
+         if(count>0)
+         {
+         	i--;
+         }
+  	  }
+  	}
+  	 document.getElementById('tex').value =r.join("");
+    }
+</script>
+</body>
+</html>
