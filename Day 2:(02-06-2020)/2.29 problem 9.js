@@ -11,15 +11,15 @@
   
     function returnMinors(arr)
      {
-       var arrayli=[];
+       var array=[];
        for(var i=0;i<students.length;i++)
        {
            
-           if(students[i]["age"]>20)
+           if(students[i].age>20)
            {
-               arrayli.push(students[i]["name"])
+               array.push(students[i].name)
            }
        }
-       return arrayli;
+       return array;
    }
    console.log(returnMinors(students));
