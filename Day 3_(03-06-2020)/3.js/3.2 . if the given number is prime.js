@@ -26,9 +26,9 @@ for(i=2;i<n;i++)
 
 }
 return (b.join(" "));
-function function2(res)
+function function2()
 {
-console.log(res);
+console.log(b.join(" "));
 }
 function2(function1)
     
