@@ -1,6 +1,7 @@
 // if the given number is prime
+function demofun(guvi)
+{
 var n=10;
-function function1(n)
 {
 var count=0;
 b=[];
@@ -25,10 +26,10 @@ for(i=2;i<n;i++)
 } 
 
 }
-return (b.join(" "));
-function function2()
-{
-console.log(b.join(" "));
+guvi()
 }
-function2(function1)
+demofun(function demofun2(){
+console.log(b.join(" "));
+})
+
     
