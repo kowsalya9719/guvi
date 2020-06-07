@@ -154,6 +154,13 @@ var n = arr.lastIndexOf(8);
 console.log(n);
 }
 findindexof([5, 12, 6, 130, 8]);
+/*problem 8 - flattenDeep
+Recursively flattens array.*/
+function flattenDeep(arr)
+{
+console.log(arr.flat(3));
+}
+flattenDeep([1, [2, [3, [4]],  5]]);
 
 /*problem 10 - fromPairs
 this method returns an object composed from key-value pairs.*/
