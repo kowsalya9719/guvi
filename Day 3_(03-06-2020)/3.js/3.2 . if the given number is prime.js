@@ -1,35 +1,24 @@
 // if the given number is prime
-function demofun(guvi)
+function prime(num,call)
 {
-var n=10;
-{
+var n=num;
 var count=0;
-b=[];
-for(i=2;i<n;i++)
-{ 
-    var count=0;
-    for(j=1;j<=i;j++)
-    {
-       
-     if(i%j===0)
-    {
-        count=count+1;
-    }
-    }
+for(i=1;i<=n;i++)
 {
-
-        if(count==2)
-        {
-            b.push(i);
-        }
-
-} 
-
+if(n%i==0)
+{
+count=count+1;
 }
-guvi()
 }
-demofun(function demofun2(){
-console.log(b.join(" "));
-})
+if(count==2)
+{
+call();
+}
+else
+{
+console.log("not a prime number");
+}
+}
+prime(5,function(){console.log("prime number");})
 
     
