@@ -58,10 +58,13 @@ console.log(list);
 
 /*problem 3 - flatconcat
 Creates a new array concatenating and flattens array a single level deep. with any additional arrays and/or values.*/
-var a=[1];
-var b=[...a,2,[3],[[4]]];
-var c=[...b];
-console.log(c);
+function flat()
+{
+var array=[1];
+var flatconcat=[array,2,[3],[[4]]];
+console.log(flatconcat.flat(4));
+}
+flat();
 
 /*Problem 4 - drop
 Creates a slice of array with n elements dropped from the beginning.*/
