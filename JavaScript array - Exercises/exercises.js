@@ -137,14 +137,6 @@ var c=arr.slice(n);
 console.log(c);
 }
 dropRightWhile([1,2,3,4,5],5);
-//2
-function dropRightWhile(arr){
-	var array=arr.filter(function(value,index,array){
-		return value%2!==0;
-	});
-	return array
-}
-console.log(dropRightWhile([1,2,3,5]));
 
 /*problem 7 - findLastIndex
 This method is like Array.prototype.findIndex except that it iterates over elements of collection from right to left.*/
@@ -161,6 +153,21 @@ function flattenDeep(arr)
 console.log(arr.flat(3));
 }
 flattenDeep([1, [2, [3, [4]],  5]]);
+
+/*problem 9 - flattenDepth
+Recursively flatten array up to depth times.*/
+//1
+function flattenDepth(array,n)
+{
+console.log(array.flat(n));
+}
+flattenDepth([1, [2, [3, [4]],  5]],1);
+//2
+function flattenDepth(array,n)
+{
+console.log(array.flat(n));
+}
+flattenDepth([1, [2, [3, [4]],  5]],2);
 
 /*problem 10 - fromPairs
 this method returns an object composed from key-value pairs.*/
