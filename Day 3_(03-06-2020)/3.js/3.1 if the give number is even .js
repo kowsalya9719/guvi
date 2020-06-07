@@ -1,7 +1,13 @@
 //if the give number is even 
-function myfun(num,even){
-    if(num%2==0){
-        even()}}
-function myfun1(){
-    console.log("even");
-}myfun(10,myfun1);
+function findeven(n,call)
+{
+if(n%2==0)
+{
+call();
+}
+else
+{
+console.log("not a even number");
+}
+}
+findeven(2,function(){console.log("even number");})
