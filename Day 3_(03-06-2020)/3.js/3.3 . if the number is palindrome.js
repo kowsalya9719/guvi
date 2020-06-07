@@ -1,19 +1,19 @@
 // if the number is palindrome.
-var n=123;
-function function1(n)
-var a='mom';
-var s='';
+function palindrome(str,call)
+{
+ var a=str;
+ var s="";
 for(i=(a.length)-1;i>=0;i--)
 {
-s+=a[i]+'';
+s=s+a[i]+"";
 }
 if(s==a)
 {
-    return("palindrome");
+call();
 }
-
-function function2(res)
+else
 {
-console.log(res);
+console.log("not a palindrome");
 }
-function2(function1)
+}
+palindrome('mom',function(){console.log("palindrome");});
