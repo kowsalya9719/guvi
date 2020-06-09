@@ -1,0 +1,42 @@
+//grid task
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>react</title>
+    <meta charset="UTF-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script>
+      const rootElement = document.getElementById("app");
+      //outside div
+      const element = React.createElement(
+        "div",
+        {
+          className: "root",
+          style: { border: "1px solid black", height: "300px", width: "300px" }
+        },
+        box
+      );
+      //1 box
+      const box = React.createElement("div", {
+        className: "rootone",
+        style: { border: "1px solid black", height: "90px", width: "200px" }
+      });
+
+      ReactDOM.render(element, rootElement);
+
+      console.log(React);
+      console.log(ReactDOM);
+    </script>
+  </body>
+</html>
